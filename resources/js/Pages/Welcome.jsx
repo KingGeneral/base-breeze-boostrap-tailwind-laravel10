@@ -1,3 +1,4 @@
+// https://github.vue.tailwind-prefix.cbass.dev/
 import { Link, Head } from '@inertiajs/react';
 
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
@@ -34,7 +35,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                 </div>
 
                 <div className="container-fluid">
-                    <div className='row'>
+                    <div className='row' id="test">
                         <div className="text-center col-xs-12">
                             test
                         </div>
