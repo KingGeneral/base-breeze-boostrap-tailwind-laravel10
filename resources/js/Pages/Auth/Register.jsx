@@ -38,17 +38,17 @@ export default function Register() {
                         id="name"
                         name="name"
                         value={data.name}
-                        className="mt-1 block w-full"
+                        className="tw-mt-1 tw-block tw-w-full"
                         autoComplete="name"
                         isFocused={true}
                         onChange={(e) => setData('name', e.target.value)}
                         required
                     />
 
-                    <InputError message={errors.name} className="mt-2" />
+                    <InputError message={errors.name} className="tw-mt-2" />
                 </div>
 
-                <div className="mt-4">
+                <div className="tw-mt-4">
                     <InputLabel htmlFor="email" value="Email" />
 
                     <TextInput
@@ -56,16 +56,16 @@ export default function Register() {
                         type="email"
                         name="email"
                         value={data.email}
-                        className="mt-1 block w-full"
+                        className="tw-mt-1 tw-block tw-w-full"
                         autoComplete="username"
                         onChange={(e) => setData('email', e.target.value)}
                         required
                     />
 
-                    <InputError message={errors.email} className="mt-2" />
+                    <InputError message={errors.email} className="tw-mt-2" />
                 </div>
 
-                <div className="mt-4">
+                <div className="tw-mt-4">
                     <InputLabel htmlFor="password" value="Password" />
 
                     <TextInput
@@ -73,16 +73,16 @@ export default function Register() {
                         type="password"
                         name="password"
                         value={data.password}
-                        className="mt-1 block w-full"
+                        className="tw-mt-1 tw-block tw-w-full"
                         autoComplete="new-password"
                         onChange={(e) => setData('password', e.target.value)}
                         required
                     />
 
-                    <InputError message={errors.password} className="mt-2" />
+                    <InputError message={errors.password} className="tw-mt-2" />
                 </div>
 
-                <div className="mt-4">
+                <div className="tw-mt-4">
                     <InputLabel htmlFor="password_confirmation" value="Confirm Password" />
 
                     <TextInput
@@ -90,19 +90,19 @@ export default function Register() {
                         type="password"
                         name="password_confirmation"
                         value={data.password_confirmation}
-                        className="mt-1 block w-full"
+                        className="tw-mt-1 tw-block tw-w-full"
                         autoComplete="new-password"
                         onChange={(e) => setData('password_confirmation', e.target.value)}
                         required
                     />
 
-                    <InputError message={errors.password_confirmation} className="mt-2" />
+                    <InputError message={errors.password_confirmation} className="tw-mt-2" />
                 </div>
 
-                <div className="flex items-center justify-end mt-4">
+                <div className="tw-flex tw-items-center tw-justify-end tw-mt-4">
                     <Link
                         href={route('login')}
-                        className="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        className="tw-underline tw-text-sm tw-text-gray-600 hover:tw-text-gray-900 tw-rounded-md focus:tw-outline-none focus:tw-ring-2 focus:tw-ring-offset-2 focus:tw-ring-indigo-500"
                     >
                         Already registered?
                     </Link>

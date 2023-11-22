@@ -30,7 +30,7 @@ export default function Login({ status, canResetPassword }) {
         <GuestLayout>
             <Head title="Log in" />
 
-            {status && <div className="mb-4 font-medium text-sm text-green-600">{status}</div>}
+            {status && <div className="tw-mb-4 tw-font-medium tw-text-sm tw-text-green-600">{status}</div>}
 
             <form onSubmit={submit}>
                 <div>
@@ -41,16 +41,16 @@ export default function Login({ status, canResetPassword }) {
                         type="email"
                         name="email"
                         value={data.email}
-                        className="mt-1 block w-full"
+                        className="tw-mt-1 tw-block tw-w-full"
                         autoComplete="username"
                         isFocused={true}
                         onChange={(e) => setData('email', e.target.value)}
                     />
 
-                    <InputError message={errors.email} className="mt-2" />
+                    <InputError message={errors.email} className="tw-mt-2" />
                 </div>
 
-                <div className="mt-4">
+                <div className="tw-mt-4">
                     <InputLabel htmlFor="password" value="Password" />
 
                     <TextInput
@@ -58,30 +58,30 @@ export default function Login({ status, canResetPassword }) {
                         type="password"
                         name="password"
                         value={data.password}
-                        className="mt-1 block w-full"
+                        className="tw-mt-1 tw-block tw-w-full"
                         autoComplete="current-password"
                         onChange={(e) => setData('password', e.target.value)}
                     />
 
-                    <InputError message={errors.password} className="mt-2" />
+                    <InputError message={errors.password} className="tw-mt-2" />
                 </div>
 
-                <div className="block mt-4">
-                    <label className="flex items-center">
+                <div className="tw-block tw-mt-4">
+                    <label className="tw-flex tw-items-center">
                         <Checkbox
                             name="remember"
                             checked={data.remember}
                             onChange={(e) => setData('remember', e.target.checked)}
                         />
-                        <span className="ms-2 text-sm text-gray-600">Remember me</span>
+                        <span className="ms-2 tw-text-sm tw-text-gray-600">Remember me</span>
                     </label>
                 </div>
 
-                <div className="flex items-center justify-end mt-4">
+                <div className="tw-flex tw-items-center tw-justify-end tw-mt-4">
                     {canResetPassword && (
                         <Link
                             href={route('password.request')}
-                            className="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                            className="tw-underline tw-text-sm tw-text-gray-600 hover:tw-text-gray-900 tw-rounded-md focus:tw-outline-none focus:tw-ring-2 focus:tw-ring-offset-2 focus:tw-ring-indigo-500"
                         >
                             Forgot your password?
                         </Link>
